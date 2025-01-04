@@ -1,4 +1,4 @@
-![total_spend_with_moving_avg](https://github.com/user-attachments/assets/15cae3e8-427f-4231-80a5-89c66b1a997d)![purchase_prob_over_rfm](https://github.com/user-attachments/assets/a9a7e31d-b451-4b9e-8593-f0c06383ab8c)![rmf_predicted_spend_correlation_heatmap](https://github.com/user-attachments/assets/1fb02aee-1965-41d0-b116-652376c6e526)![predicted_spend_vs_features](https://github.com/user-attachments/assets/575561c3-aab7-43e0-abe0-289f9fcdfb8e)# Predictive Customer - Lifetime Value, Spend Probability and Behaviour Analysis
+# Predictive Customer - Lifetime Value, Spend Probability and Behaviour Analysis
 
 ## Introduction
 
