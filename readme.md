@@ -1,4 +1,4 @@
-![clv_feature_importance](https://github.com/user-attachments/assets/4d6787fe-afdf-4c1e-9b4b-3d9949af96ed)# Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis
+# **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
 
 ## Introduction
 
@@ -205,7 +205,5 @@ and perfect for our particular use case.
 
 ## Conclusion
 
-Through meticulous feature engineering and model development, this project successfully predicts Customer Lifetime Value, providing valuable insights for strategic decision-making in customer relationship management. The analyses underscore the importance of tailored marketing strategies to enhance customer retention and profitability.
-
----
+Through meticulous feature engineering and model development, this project successfully predicts Customer Lifetime Value and the Spend Probability providing valuable insights for strategic decision-making in customer relationship management. The analyses underscore the importance of tailored marketing strategies to enhance customer retention and profitability.
 
