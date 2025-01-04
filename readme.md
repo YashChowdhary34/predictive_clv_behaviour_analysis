@@ -36,10 +36,7 @@ and perfect for our particular use case.
 
 ## Feature Engineering
 
-The **Feature Engineering** notebook focuses on transforming raw customer data into meaningful features suitable for machine learning models. Key steps include:
-
 ### Objectives
-- Process and clean raw transactional data.
 - Extract features encapsulating customer behavior, such as recency, frequency, and monetary value (RFM).
 - Generate advanced predictors like average spending, purchase trends, and customer segmentation metrics.
 
