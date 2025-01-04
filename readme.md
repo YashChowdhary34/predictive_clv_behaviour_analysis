@@ -1,4 +1,4 @@
-# **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
+![customer_metrics_predicted_clv_parallelcoords](https://github.com/user-attachments/assets/e93ce5fc-bc3e-4f2c-8ddc-b6b721850710)![avg_spend_by_month](https://github.com/user-attachments/assets/24059c74-3e8d-40c5-984e-b2432e837c5b)![relationship_btw_predicted_spend_and_frequency](https://github.com/user-attachments/assets/02a66e37-124c-467a-92ea-60b001effcf8)# **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
 
 ## Introduction
 This project focuses on analyzing and predicting Customer Lifetime Value (CLV) by examining customer purchasing patterns, behavioral trends, and engagement metrics. Using a real-world dataset, we derive actionable insights to improve customer retention strategies and forecast future revenue streams.
@@ -122,6 +122,12 @@ We are working with the **CDNow Dataset**, which was donated after the company w
 
 ## Visualizations
 
+### Customer Activity
+![customer_activity_trendline](https://github.com/user-attachments/assets/04a0d6ba-65e0-4c73-9514-e9ad955d5595)
+
+### Parallel Coordinates for All Customer Metrics
+![customer_metrics_predicted_clv_parallelcoords](https://github.com/user-attachments/assets/0ca7fd93-f1a8-4912-ba08-7d38d499d010)
+
 ### Dataset Analysis
 - **Revenue Contribution by Top Customers**  
 ![Revenue Contribution](https://github.com/user-attachments/assets/38620e82-8745-4cf4-be90-921e4e421316)
@@ -162,6 +168,15 @@ We are working with the **CDNow Dataset**, which was donated after the company w
 - **Customer Spending Distribution**  
 ![Spending Distribution](https://github.com/user-attachments/assets/b271b7dd-0ad3-4ed5-8e1d-887cd2323cf5)
 
+- **Relationship Between Frequency and Predicted Spend**
+![relationship_btw_predicted_spend_and_frequency](https://github.com/user-attachments/assets/68708b66-dcc0-4294-86db-5f593811c14a)
+
+- **Customer Segmentation by Value and Frequency**
+![segmentation_by_value_frequency](https://github.com/user-attachments/assets/e6eb459d-7a8c-4629-968b-ba5b70842164)
+
+- **Correlation Heatmap of RMF and Predicted Spend**
+![rmf_predicted_spend_correlation_heatmap](https://github.com/user-attachments/assets/aef017ef-fb14-4868-a622-e13697cf37fa)
+
 ---
 
 ### Churn Probability Analysis
@@ -171,11 +186,24 @@ We are working with the **CDNow Dataset**, which was donated after the company w
 - **Purchase Probability over RFM**  
 ![Purchase vs RFM](https://github.com/user-attachments/assets/1c1f2fe1-05b9-40d7-a5fe-dac94e3b5c4b)
 
+- **Predicted Churn Probability Correlation Heatmap**
+![churn_correlation_heatmap](https://github.com/user-attachments/assets/fa7418cc-fdee-46f6-bafe-c3a106c765d4)
+
 ---
 
 ### Timeseries and Forecasting
 - **Spend Trends Over Time**  
 ![Spend Over Time](https://github.com/user-attachments/assets/75ab2bb3-f60a-4446-b06f-a0996feba4b2)
+
+- **Avg Spend over Month and DayofWeek**
+![avg_spend_by_month](https://github.com/user-attachments/assets/6bbb174a-cfd3-49b9-87c7-8e636ac605fa)
+![avg_spend_by_dayofweek](https://github.com/user-attachments/assets/0df86520-2f5b-49fd-8eb7-f3faf6ff0a4c)
+
+- **Revenue with Moving Averages**
+![total_spend_with_moving_avg](https://github.com/user-attachments/assets/70bee57f-dd1a-4f97-87f9-0bd741e68ce9)
+
+- **Customer Spend over Time Density Heatmap**
+![customer_spend_over_time_heatmap](https://github.com/user-attachments/assets/e1436c66-0e1d-4535-9ec4-39f315a03940)
 
 - **Forecast for Next 90 Days**  
 ![90-Day Forecast](https://github.com/user-attachments/assets/05ddb976-5842-4175-b40d-47ca892346d6)
