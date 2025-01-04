@@ -1,4 +1,4 @@
-![customer_metrics_predicted_clv_parallelcoords](https://github.com/user-attachments/assets/e93ce5fc-bc3e-4f2c-8ddc-b6b721850710)![avg_spend_by_month](https://github.com/user-attachments/assets/24059c74-3e8d-40c5-984e-b2432e837c5b)![relationship_btw_predicted_spend_and_frequency](https://github.com/user-attachments/assets/02a66e37-124c-467a-92ea-60b001effcf8)# **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
+# **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
 
 ## Introduction
 This project focuses on analyzing and predicting Customer Lifetime Value (CLV) by examining customer purchasing patterns, behavioral trends, and engagement metrics. Using a real-world dataset, we derive actionable insights to improve customer retention strategies and forecast future revenue streams.
