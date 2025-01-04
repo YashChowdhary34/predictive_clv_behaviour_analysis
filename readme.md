@@ -1,4 +1,4 @@
-# Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis
+![clv_feature_importance](https://github.com/user-attachments/assets/4d6787fe-afdf-4c1e-9b4b-3d9949af96ed)# Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis
 
 ## Introduction
 
@@ -26,7 +26,6 @@ and perfect for our particular use case.
   - [Churn Probability Model](#Spend-Probability-Prediction-Model)
 - [Visualizations]
   - [Dataset Analysis](#Dataset-Analysis)
-  - [Cohort Analysis](#Cohort-Analysis)
   - [RFM Analysis](#RFM-Analysis)
   - [CLV Analysis](#CLV-Analysis)
   - [Churn Probability Analysis](#Churn-Probability-Analysis)
@@ -57,8 +56,6 @@ and perfect for our particular use case.
 
 ## Spend Amount Prediction Model
 
-The **Spend Amount Prediction Model** notebook develops a regression model to estimate the total spend by customers over the next 90 days. This forms the cornerstone of CLV predictions.
-
 ### Objectives
 - Train a model to predict `spend_90_total` using features derived from the Feature Engineering phase.
 - Evaluate and optimize model performance.
@@ -80,11 +77,15 @@ The **Spend Amount Prediction Model** notebook develops a regression model to es
 - Model achieves robust prediction accuracy with MAE and RMSE within acceptable thresholds.
 - Feature importance analysis highlights key drivers of customer spending behavior.
 
+### Model Performance
+**Model’s predictions are off by about 9.65 units which for out particular dataset evaluates to 9-10 dollars**
+
+### Feature Importance
+![clv_feature_importance](https://github.com/user-attachments/assets/d676e09f-63f2-48fa-aaed-9935c30b58cf)
+
 ---
 
 ## Spend Probability Prediction Model
-
-The **Spend Probability Prediction Model** notebook focuses on predicting the likelihood of a customer purchasing within the next 90 days. This complements the spend amount model to provide a holistic view of customer behavior.
 
 ### Objectives
 - Build a classification model to predict `spend_90_flag` (a binary indicator of future purchases).
@@ -107,6 +108,12 @@ The **Spend Probability Prediction Model** notebook focuses on predicting the li
 - High accuracy and ROC-AUC scores ensure reliable probability predictions.
 - Predictions integrated with spend amount estimates enable targeted marketing and retention strategies.
 
+### Model Performance
+**ROC-AUC: 0.84**
+
+### Feature Importance
+![churn_feature_importance](https://github.com/user-attachments/assets/515473e8-bc91-4b20-9593-8f94c36b5c90)
+
 ---
 
 ## Dataset Analysis
@@ -122,10 +129,6 @@ The **Spend Probability Prediction Model** notebook focuses on predicting the li
 
 ### Revenue By Product Price
 ![revenue_by_product_price](https://github.com/user-attachments/assets/47b6f5d2-6f4f-433a-8620-b46e1c9ca3b4)
-
----
-
-## Cohort Analysis
 
 ---
 
