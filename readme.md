@@ -28,9 +28,9 @@ and perfect for our particular use case.
   - [Dataset Analysis](#Dataset-Analysis)
   - [Cohort Analysis](#Cohort-Analysis)
   - [RFM Analysis](#RFM-Analysis)
-  - [CLV Analysis]
-  - [Churn Probability Analysis]
-  - [Timeseries and Forecasting]
+  - [CLV Analysis](#CLV-Analysis)
+  - [Churn Probability Analysis](#Churn-Probability-Analysis)
+  - [Timeseries and Forecasting](#Timeseries-and-Forecasting)
 
 ---
 
