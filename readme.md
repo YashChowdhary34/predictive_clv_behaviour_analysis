@@ -1,4 +1,4 @@
-![monthly_revenue_trends](https://github.com/user-attachments/assets/458ad152-f99b-416d-97af-a65559120e9c)# Predictive Customer - Lifetime Value, Spend Probability and Behaviour Analysis
+![total_spend_with_moving_avg](https://github.com/user-attachments/assets/15cae3e8-427f-4231-80a5-89c66b1a997d)![purchase_prob_over_rfm](https://github.com/user-attachments/assets/a9a7e31d-b451-4b9e-8593-f0c06383ab8c)![rmf_predicted_spend_correlation_heatmap](https://github.com/user-attachments/assets/1fb02aee-1965-41d0-b116-652376c6e526)![predicted_spend_vs_features](https://github.com/user-attachments/assets/575561c3-aab7-43e0-abe0-289f9fcdfb8e)# Predictive Customer - Lifetime Value, Spend Probability and Behaviour Analysis
 
 ## Introduction
 
@@ -24,15 +24,17 @@ and perfect for our particular use case.
 - [Models]
   - [CLV Model](#Spend-Amount-Prediction-Model)
   - [Churn Probability Model](#Spend-Probability-Prediction-Model)
-- [Analysis]
-  - [Dataset Analysis]
-  - [Cohort Analysis]
-  - [RFM Analysis]
+- [Visualizations]
+  - [Dataset Analysis](#Dataset-Analysis)
+  - [Cohort Analysis](#Cohort-Analysis)
+  - [RFM Analysis](#RFM-Analysis)
   - [CLV Analysis]
   - [Churn Probability Analysis]
   - [Timeseries and Forecasting]
- 
-## 1. Feature Engineering
+
+---
+
+## Feature Engineering
 
 The **Feature Engineering** notebook focuses on transforming raw customer data into meaningful features suitable for machine learning models. Key steps include:
 
@@ -56,7 +58,7 @@ The **Feature Engineering** notebook focuses on transforming raw customer data i
 
 ---
 
-## 2. Spend Amount Prediction Model
+## Spend Amount Prediction Model
 
 The **Spend Amount Prediction Model** notebook develops a regression model to estimate the total spend by customers over the next 90 days. This forms the cornerstone of CLV predictions.
 
@@ -83,7 +85,7 @@ The **Spend Amount Prediction Model** notebook develops a regression model to es
 
 ---
 
-## 3. Spend Probability Prediction Model
+## Spend Probability Prediction Model
 
 The **Spend Probability Prediction Model** notebook focuses on predicting the likelihood of a customer purchasing within the next 90 days. This complements the spend amount model to provide a holistic view of customer behavior.
 
@@ -107,6 +109,8 @@ The **Spend Probability Prediction Model** notebook focuses on predicting the li
 ### Outcomes
 - High accuracy and ROC-AUC scores ensure reliable probability predictions.
 - Predictions integrated with spend amount estimates enable targeted marketing and retention strategies.
+
+---
 
 ## Dataset Analysis
 
@@ -144,8 +148,64 @@ The **Spend Probability Prediction Model** notebook focuses on predicting the li
 
 ---
 
-## Prediction Analysis
+## CLV Analysis
+
+### Predicted Spend over Recency, Frequency, Avg Spend, Total Spend
+![predicted_spend_vs_features](https://github.com/user-attachments/assets/85a53bb8-954e-4100-a72b-95d6ee628719)
+
+### Correlation Heatmap between all the Features and Predicted Spend
+![predicted_clv_correlation_heatmap](https://github.com/user-attachments/assets/994b20bd-b73a-4cfd-8660-36d2fca818a8)
+
+### Distribution of Customer Spending
+![distribution_of_customer_spending](https://github.com/user-attachments/assets/b271b7dd-0ad3-4ed5-8e1d-887cd2323cf5)
+
+### Relationship Between Frequency and Predicted Spend
+![relationship_btw_predicted_spend_and_frequency](https://github.com/user-attachments/assets/497dfdc8-4e37-4f8f-8c5e-f7ec5f8370b9)
+
+### Customer Segmentation by Value and Frequency
+![segmentation_by_value_frequency](https://github.com/user-attachments/assets/2a7a180b-ff8b-471b-8d21-b9a59fcb90f8)
+
+### Correlation Heatmap of RMF and Predicted Spend
+![rmf_predicted_spend_correlation_heatmap](https://github.com/user-attachments/assets/28b5fbf1-b29f-4d7f-925c-e0f6c8f58b2a)
 
 ---
 
+## Churn Probability Analysis
+
+### Distribution of Predicted Purchase Probability
+![purchase_and_churn_probability_distribution](https://github.com/user-attachments/assets/42e4847b-0c39-445a-a681-aedae2032b94)
+
+### Purchase Probability over RFM Features
+![purchase_prob_over_rfm](https://github.com/user-attachments/assets/1c1f2fe1-05b9-40d7-a5fe-dac94e3b5c4b)
+
+### Predicted Churn Probability Correlation Heatmap
+![churn_correlation_heatmap](https://github.com/user-attachments/assets/0fdecf9f-ec8d-4579-88f7-de405caa1f49)
+
+---
+
+## Timeseries and Forecasting
+
+### Total Spend over Time
+![total_spend_over_time](https://github.com/user-attachments/assets/75ab2bb3-f60a-4446-b06f-a0996feba4b2)
+
+### Avg Spend over Month and DayofWeek
+![avg_spend_by_month](https://github.com/user-attachments/assets/c57016a7-9725-4253-a7fb-e004b2d2836e)
+![avg_spend_by_dayofweek](https://github.com/user-attachments/assets/e6415916-b02f-4bde-a4a4-9062a05a6c15)
+
+### Revenue with Moving Averages
+![total_spend_with_moving_avg](https://github.com/user-attachments/assets/a60d14e8-ac77-4956-94b3-380480c7ab86)
+
+### Customer Spend over Time Density Heatmap
+![customer_spend_over_time_heatmap](https://github.com/user-attachments/assets/e34baa06-99cf-434f-9a1c-9d1031780985)
+
+### Spend Forecast for the Next 90 days
+![spend_forecast_for_next_90_days](https://github.com/user-attachments/assets/05ddb976-5842-4175-b40d-47ca892346d6)
+
+---
+
+## Conclusion
+
+Through meticulous feature engineering and model development, this project successfully predicts Customer Lifetime Value, providing valuable insights for strategic decision-making in customer relationship management. The analyses underscore the importance of tailored marketing strategies to enhance customer retention and profitability.
+
+---
 
