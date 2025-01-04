@@ -1,4 +1,4 @@
-# Predictive Customer - Lifetime Value, Spend Probability and Behaviour Analysis
+# Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis
 
 ## Introduction
 
