@@ -230,7 +230,7 @@ We use the K-Means clustering algorithm to identify distinct customer groups. Th
 
 Using Principal Component Analysis (PCA), we reduced the dimensions of the dataset for visualization. The clusters were plotted to reveal the distinct groupings.
 
-![K-Means Clustering](#)![segmentation_distribution](https://github.com/user-attachments/assets/e53a887c-2221-4ed3-8e7d-b77fc438135b)
+![segmentation_distribution](https://github.com/user-attachments/assets/e53a887c-2221-4ed3-8e7d-b77fc438135b)
 
 ### Cluster Insights
 
