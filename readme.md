@@ -204,5 +204,47 @@ Overall, this project will provide valuable insights into customer behavior, all
 
 ---
 
+## Customer Segmentation
+
+Customer segmentation helps in grouping customers based on similarities, allowing businesses to gain a broad view of their customer base and answer critical business questions effectively. Here, we employ RFM (Recency, Frequency, Monetary) analysis and K-Means clustering for segmentation.
+
+### RFM Analysis
+
+RFM analysis evaluates customer behavior through three key metrics:
+- **Recency**: How recently a customer made a purchase.
+- **Frequency**: How often a customer makes purchases.
+- **Monetary Value**: The total monetary value of a customer’s purchases.
+
+1. **Recency Calculation**:  
+   We calculate the number of days since the last purchase for each customer.
+2. **Frequency and Monetary Value**:  
+   Frequency is the total number of transactions per customer, and Monetary Value is the total spending by a customer.
+
+These features are combined into a single dataset, forming the foundation for clustering.
+
+### K-Means Clustering
+
+We use the K-Means clustering algorithm to identify distinct customer groups. The optimal number of clusters is determined using the Elbow Method, which plots inertia values against different K-values. For this analysis, we chose **K=4**.
+
+### Visualizing Clusters
+
+Using Principal Component Analysis (PCA), we reduced the dimensions of the dataset for visualization. The clusters were plotted to reveal the distinct groupings.
+
+![K-Means Clustering](#)![segmentation_distribution](https://github.com/user-attachments/assets/e53a887c-2221-4ed3-8e7d-b77fc438135b)
+
+### Cluster Insights
+
+Each cluster was analyzed based on the average RFM metrics:
+- **Cluster 0**: Average Customers  
+- **Cluster 1**: Losing Customers  
+- **Cluster 2**: Loyal Customers  
+- **Cluster 3**: VIP Customers  
+
+These labels were assigned based on the clustering results, enabling targeted strategies for each group. The segmentation allows businesses to focus on retaining valuable customers, improving loyalty, and reducing churn.
+
+This segmentation framework provides actionable insights to tailor marketing efforts and improve customer relationship management.
+
+---
+
 ## Conclusion
 This project demonstrates the power of predictive analytics in customer behavior analysis. By accurately forecasting CLV and spend probabilities, businesses can enhance retention strategies and revenue growth. The analyses reinforce the importance of leveraging data-driven insights for tailored customer engagement.
