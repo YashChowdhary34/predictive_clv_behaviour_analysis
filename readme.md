@@ -1,13 +1,13 @@
 # **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
 
 ## Introduction
-Customer behavior analysis is a vital process that can provide businesses with valuable insights into their customers' behaviors and preferences. In this project, I analized the CDNOW dataset to determine customer buying patterns based on Recency, Frequency, and Monetary Value (RFM).
+Customer behavior analysis is a vital process providing businesses with valuable insights into their customers' behaviors and preferences. In this project, I analyzed the CDNOW dataset to determine customer buying patterns based on Recency, Frequency, and Monetary Value (RFM).
 
-- Using Python, I performed RFM analysis to determine each customer's Recency, Frequency, and Monetary Value based on their transaction history. This analysis will help us understand how recently and how often customers make purchases, as well as the average amount they spend.
+- Using Python, I performed RFM analysis to determine each customer's Recency, Frequency, and Monetary Value based on their transaction history. This analysis will help us understand how recently and how often customers make purchases and the average amount they spend.
 
 - Next, I used the K-Means algorithm to segment customers into groups based on their RFM scores. This segmentation will help identify distinct customer groups and tailor marketing strategies and promotions to each group's specific needs and preferences.
 
-- I also developed a machine learning model to predict the probability of customer purchase and the likely purchase amount using XGBRegressor and XGBClassifier. By predicting customer behavior, businesses can better understand their customers' needs and preferences and adjust their marketing strategies accordingly.
+I also developed a machine learning model using XGBRegressor and XGBClassifier to predict the probability of customer purchase and the likely purchase amount. By predicting customer behavior, businesses can better understand their customers' needs and preferences and adjust their marketing strategies accordingly.
 
 - Finally, I conducted cohort analysis to determine customer lifetime value (CLV) and measure the effectiveness of our marketing strategies. By analyzing customer behavior over time, we can gain insights into how our customer base changes and adapt our strategies to meet their evolving needs.
 
@@ -19,18 +19,7 @@ Overall, this project will provide valuable insights into customer behavior, all
 - **Which customers have the highest spending probability in the next 90 days?**
 - **Which customers have recently purchased but are unlikely to buy again?** (Survival Analysis)
 - **Which customers were predicted to purchase but didn't?** (Missed Opportunities)
-
----
-
-## Dataset
-We are working with the **CDNow Dataset**, which was donated after the company went bankrupt in the early 2000s. The dataset is highly reliable, realistic, and well-suited for our use case.
-
-### Features
-- **Customer ID**: Unique identifier for each customer.
-- **Purchase Date**: Date of each purchase.
-- **Purchase Quantity**: Number of items purchased.
-- **Order Value**: Total value of each transaction.
-
+- 
 ---
 
 ## Table of Contents
@@ -51,7 +40,7 @@ We are working with the **CDNow Dataset**, which was donated after the company w
 
 ### Objectives
 - Create features encapsulating customer behavior, such as recency, frequency, and monetary value (RFM).
-- Generate advanced predictors like average spending, purchase trends, and segmentation metrics.
+- Generate advanced predictors like average spending, purchase trends, and segmentation metrics and timeseries features.
 
 ### Key Features Created
 - **Recency**: Days since the last purchase.
@@ -60,22 +49,18 @@ We are working with the **CDNow Dataset**, which was donated after the company w
   - `price_sum`: Total spend across all transactions.
   - `price_mean`: Average spend per transaction.
 - **spend_90_total**: Predicted customer lifetime value (CLV) for the next 90 days.
-
-### Methods
-- Aggregation and grouping based on `customer_id`.
-- Handling missing data and outliers.
-- Normalization and scaling of numerical features to enhance model performance.
-
+- **spend_90_flag**: Predicted customer spend probability over the next 90 days.
+  
 ---
 
 ## Spend Amount Prediction Model
 
-### Objectives
+### What the customers spend in the next 90 days? (regression)
 - Train a model to predict `spend_90_total` using features derived from the Feature Engineering phase.
 - Evaluate and optimize model performance.
 
 ### Methodology
-- **Model Used**: Gradient Boosting Regressor (e.g., XGBoost, LightGBM).
+- **Model Used**: Gradient Boosting Regressor. (XGBRegressor)
 - **Feature Selection**:
   - Recency, frequency, monetary metrics, and other behavioral features.
 - **Evaluation Metrics**:
@@ -101,22 +86,21 @@ We are working with the **CDNow Dataset**, which was donated after the company w
 
 ## Spend Probability Prediction Model
 
-### Objectives
+### What is the probability of a customer to purchase in the next 90 days? (classification)
 - Build a classification model to predict `spend_90_flag` (a binary indicator of future purchases).
 - Combine predictions with spending amounts to prioritize high-value customers.
 
 ### Methodology
-- **Model Used**: Random Forest Classifier or Logistic Regression.
+- **Model Used**: Gradient Boosting Classifier. (XGBClassifier)
 - **Features**: Same as the Spend Amount Prediction Model.
 - **Evaluation Metrics**:
-  - Accuracy
   - Precision, Recall, and F1-Score
   - Area Under the Receiver Operating Characteristic (ROC-AUC) Curve
 
 ### Workflow
-1. **Label Encoding**: Transform `spend_90_flag` to a binary variable.
-2. **Model Training**: Employ robust techniques to handle class imbalance.
-3. **Threshold Tuning**: Adjust decision thresholds to maximize business-specific metrics.
+1. **Data Splitting**: Stratified train-test split.
+2. **Hyperparameter Tuning**: Using grid search and cross-validation.
+3. **Performance Analysis**: Visualizing predictions versus actual spend values.
 
 ### Outcomes
 - High accuracy and ROC-AUC scores ensure reliable probability predictions.
