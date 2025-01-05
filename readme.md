@@ -19,7 +19,7 @@ Overall, this project will provide valuable insights into customer behavior, all
 - **Which customers have the highest spending probability in the next 90 days?**
 - **Which customers have recently purchased but are unlikely to buy again?** (Survival Analysis)
 - **Which customers were predicted to purchase but didn't?** (Missed Opportunities)
-- 
+  
 ---
 
 ## Table of Contents
