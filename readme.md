@@ -1,7 +1,17 @@
 # **Predictive - Customer Lifetime Value, Spend Probability, and Behaviour Analysis**
 
 ## Introduction
-This project focuses on analyzing and predicting Customer Lifetime Value (CLV) by examining customer purchasing patterns, behavioral trends, and engagement metrics. Using a real-world dataset, we derive actionable insights to improve customer retention strategies and forecast future revenue streams.
+Customer behavior analysis is a vital process that can provide businesses with valuable insights into their customers' behaviors and preferences. In this project, I analized the CDNOW dataset to determine customer buying patterns based on Recency, Frequency, and Monetary Value (RFM).
+
+- Using Python, I performed RFM analysis to determine each customer's Recency, Frequency, and Monetary Value based on their transaction history. This analysis will help us understand how recently and how often customers make purchases, as well as the average amount they spend.
+
+- Next, I used the K-Means algorithm to segment customers into groups based on their RFM scores. This segmentation will help identify distinct customer groups and tailor marketing strategies and promotions to each group's specific needs and preferences.
+
+- I also developed a machine learning model to predict the probability of customer purchase and the likely purchase amount using XGBRegressor and XGBClassifier. By predicting customer behavior, businesses can better understand their customers' needs and preferences and adjust their marketing strategies accordingly.
+
+- Finally, I conducted cohort analysis to determine customer lifetime value (CLV) and measure the effectiveness of our marketing strategies. By analyzing customer behavior over time, we can gain insights into how our customer base changes and adapt our strategies to meet their evolving needs.
+
+Overall, this project will provide valuable insights into customer behavior, allowing businesses to improve customer engagement, retention, and revenue.
 
 ---
 
